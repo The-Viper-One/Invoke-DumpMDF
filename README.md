@@ -2,7 +2,7 @@
 
 Invoke-DumpMDF is a PowerShell script based on the original code by XPN (xpn.github.io). Invoke-DumpMDF creates a Volume Shadow Copy of the running MSSQL database, allowing the master.mdf file to be safely copied even while in use. It then extracts the login password hashes found within the master database.
 
-Invoke-DumpMDF requires diskshadow to be installed (Default on Windows Server). This is to allow the running master.mdf database to be copied into a new fil before extraction. After completion, the script will cleanup after itself. 
+Invoke-DumpMDF requires diskshadow to be installed (Default on Windows Server). This is to allow the running master.mdf database to be copied into a new file before extraction. After completion, the script will cleanup after itself. 
 
 Administrative or SYSTEM level privileges are required.
 
