@@ -40,9 +40,9 @@ function DiskShadow-Copy {
 
     $shadowAlias = "PME_ShadowCopyAlias"
     $volume = "C:"
-    $metadataFile = Join-Path $env:LOCALAPPDATA "PME_Metadata.cab"
-    $scriptPath = Join-Path $env:LOCALAPPDATA "PME_SCRIPT0001.txt"
-    $diskshadowLog = Join-Path $env:LOCALAPPDATA "PME_LOG0001.txt"
+    $metadataFile = Join-Path $env:LOCALAPPDATA "Metadata0001.cab"
+    $scriptPath = Join-Path $env:LOCALAPPDATA "SCRIPT0001.txt"
+    $diskshadowLog = Join-Path $env:LOCALAPPDATA "LOG0001.txt"
 
     $resolvedPath = Get-ChildItem -Path $SourceFilePath -ErrorAction SilentlyContinue | Select-Object -First 1
     if (-not $resolvedPath) {
