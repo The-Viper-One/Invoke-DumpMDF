@@ -4,9 +4,13 @@ Invoke-DumpMDF is a PowerShell script based on the original code by XPN (xpn.git
 
 Invoke-DumpMDF requires diskshadow to be installed (Default on Windows Server). This is to allow the running master.mdf database to be copied into a new file before extraction. After completion, the script will cleanup after itself. 
 
-Administrative or SYSTEM level privileges are required.
-
 The resulting hashes can be cracked with Hashcat.
+
+## Requirements
+- Administrative or SYSTEM level privileges are required.
+- Disk Shadow installed (Default on Windows Server)
+
+
 
 ## Usage
 ```powershell
