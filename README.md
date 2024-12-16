@@ -32,7 +32,7 @@ Value : 0x020043538738C5813669062A64AS0CC...
 ```
 ## Crack with Hashcat
 ```
-hashcat.exe -m 1731 -a 0 -O 0x020050B40C7843AC5C196F9375549D3... Wordlists\rockyou.txt -r rules\best54.rule
+hashcat.exe -m 1731 -a 0 -O 0x020050B40C7843AC5C196F9375549D3... Wordlists\rockyou.txt -r rules\best64.rule
 ```
 ## Further Reading 
 - https://blog.xpnsec.com/extracting-master-mdf-hashes/
