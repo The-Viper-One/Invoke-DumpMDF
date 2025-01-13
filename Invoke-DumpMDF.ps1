@@ -1,4 +1,5 @@
 Function Invoke-DumpMDF {
+    param ($NoAdmin)
 
 <#
 .SYNOPSIS
@@ -15,10 +16,11 @@ Must be run as SYSTEM or administrator. Requires Diskshadow to be installed (Def
 Invoke-DumpMDF
 #>
 
+    if (-not ($NoAdmin)){
     $Principal = New-Object Security.Principal.WindowsPrincipal([Security.Principal.WindowsIdentity]::GetCurrent())
     if (-not ([Security.Principal.WindowsIdentity]::GetCurrent().Name -eq "NT AUTHORITY\SYSTEM" -or $Principal.IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator))) {
     return "[-] Ensure this script is run with administrative privileges."
-    
+        }
     }
 
     # Retrieve all master.mdf files
